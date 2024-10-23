@@ -28,7 +28,9 @@ function fib(n, array) {
             array.append(2);
         }
         else {
-            array.append(fib(n-1) + fib(n-2) + n);
+            for(let i=0; i<n; i++){
+                array.append(fib(n-1) + fib(n-2) + n);
+            }
         }
     }
 }
