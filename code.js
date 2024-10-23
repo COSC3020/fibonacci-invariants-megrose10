@@ -14,6 +14,9 @@
 }
 */
 function fib(n, array) {
+    if(n==0) {
+        return array;
+    }
     for(let i=0; i<n; i++){
         if(n==0) {
             array.push(0);
