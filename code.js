@@ -16,21 +16,22 @@
 function fib(n, array) {
     for(let i=0; i<n; i++){
         if(n==0) {
-            array.append(0);
+            array.push(0);
         }
         else if(n==1) {
-            array.append(1);
+            array.push(1);
         }
         else if(n==2) {
-            array.append(1);
+            array.push(1);
         }
         else if(n==3) {
-            array.append(2);
+            array.push(2);
         }
         else {
             for(let i=0; i<n; i++){
-                array.append(fib(n-1) + fib(n-2) + n);
+                array.push(fib(n-1) + fib(n-2) + n);
             }
+            return array;
         }
     }
 }
