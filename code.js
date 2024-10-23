@@ -1,17 +1,19 @@
 function fib(n) {
     if(n==0) {
-        return 0;
+        fibArray.push(0)
     }
     else if(n==1) {
-        return 1;
+        fibArray.push(1)
     }
     else if(n==2) {
-        return 1;
+        fibArray.push(1)
     }
     else if(n==3) {
-        return 2;
+        fibArray.push(2)
     }
     else {
-        return fib(n - 1) + fib(n - 2);
+        fibArray = fib(n - 1) + fib(n - 2);
     }
+
+    return fibArray;
 }
