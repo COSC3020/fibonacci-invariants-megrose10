@@ -32,7 +32,7 @@ function fib(n, array) {
         }
         else {
             array.push(fib(n-1) + fib(n-2) + n);
-            return array;
         }
     }
+     return array;
 }
