@@ -31,9 +31,7 @@ function fib(n, array) {
             array.push(2);
         }
         else {
-            for(let i=0; i<n; i++){
-                array.push(fib(n-1) + fib(n-2) + n);
-            }
+            array.push(fib(n-1) + fib(n-2) + n);
             return array;
         }
     }
