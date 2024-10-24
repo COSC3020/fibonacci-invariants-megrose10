@@ -13,7 +13,7 @@ function fib(n) {
         fibArray.push(2);
     }
     else {
-        fibArray = fib(n - 1) + fib(n - 2);
+        fibArray.push(fib(n - 1) + fib(n - 2));
     }
 
     return fibArray;
