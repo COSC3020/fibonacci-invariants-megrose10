@@ -27,3 +27,11 @@ about the current recursive call.
 Describe your reasoning and the conclusion you've come to. Your reasoning is the
 most important part. You do not need to prove that the invariant is correct. Add
 your answer to this markdown file.
+
+Citations:
+Citations: 
+https://www.w3schools.com/js/js_arrays.asp Used above site on a review of syntax for javascript arrays. 
+Used chatgpt to tell me what the issues in my code were: " Your Fibonacci function has a few issues. Here's a revised version that correctly generates Fibonacci numbers and appends them to an array:
+The use of append is not standard in JavaScript; use push instead. The logic needs to be restructured to correctly compute Fibonacci numbers. The recursion isn't necessary if you want to generate the Fibonacci sequence iteratively. " as well as how I am defining things. 
+ChatGPT also helped with syntax on how to store values in an array. 
+Asked Ali Torabi for help on how to store an array within JavaScript without the code initializing a new array every recursive iteration.
