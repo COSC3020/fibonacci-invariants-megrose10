@@ -1,3 +1,4 @@
+let fibArray = [];
 function fib(n) {
     if(n==0) {
         fibArray.push(0);
