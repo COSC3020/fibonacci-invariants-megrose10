@@ -10,7 +10,7 @@ function fib(n) {
             return 1;
         }
         else {
-            fibArray.push(fib(x - 1) + fib(x - 2));
+            fibArray[x] = fib(x - 1) + fib(x - 2));
             return (fib(x - 1) + fib(x - 2));
         }
     }
