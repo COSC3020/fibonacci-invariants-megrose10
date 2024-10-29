@@ -14,6 +14,6 @@ function fib(n) {
             return (fib(x - 1) + fib(x - 2));
         }
     }
-    recurFib(n)
+    recurFib(n);
     return fibArray;
 }
