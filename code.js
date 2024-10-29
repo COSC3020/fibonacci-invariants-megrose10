@@ -11,7 +11,7 @@ function fib(n) {
         }
         else {
             fibArray[x] = (fib(x - 1) + fib(x - 2));
-            return (fib(x - 1) + fib(x - 2));
+            return (recurFib(x - 1) + recurFib(x - 2));
         }
     }
     recurFib(n);
