@@ -10,7 +10,8 @@ function fib(n) {
             return 1;
         }
         else {
-            fibArray[x] = (recurFib(x - 1) + recurFib(x - 2));
+            let nextNum = (recurFib(x - 1) + recurFib(x - 2));
+            fibArray.push(nextNum);
             return (recurFib(x - 1) + recurFib(x - 2));
         }
     }
