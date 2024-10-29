@@ -6,6 +6,7 @@ function fib(n) {
             return 0;
         }
         else if(x==1) {
+            fibArray.push(0);
             fibArray.push(1);
             return 1;
         }
