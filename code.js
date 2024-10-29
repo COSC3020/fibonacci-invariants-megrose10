@@ -1,11 +1,11 @@
 function fib(n) {
     const fibArray = [];
     function recurFib(x) {
-        if(x>=0) {
+        if(x==0) {
             fibArray.push(0);
             return 0;
         }
-        else if(x>=1) {
+        else if(x==1) {
             //fibArray.push(0);
             fibArray.push(1);
             return 1;
