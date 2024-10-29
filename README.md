@@ -33,5 +33,6 @@ Citations:
 https://www.w3schools.com/js/js_arrays.asp Used above site on a review of syntax for javascript arrays. 
 Used chatgpt to tell me what the issues in my code were: " Your Fibonacci function has a few issues. Here's a revised version that correctly generates Fibonacci numbers and appends them to an array:
 The use of append is not standard in JavaScript; use push instead. The logic needs to be restructured to correctly compute Fibonacci numbers. The recursion isn't necessary if you want to generate the Fibonacci sequence iteratively. " as well as how I am defining things. 
-ChatGPT also helped with syntax on how to store values in an array. 
+ChatGPT also helped with syntax on how to store values in an array to still allow the values to be saved in an array. 
 Asked Ali Torabi for help on how to store an array within JavaScript without the code initializing a new array every recursive iteration.
+In general - while I was trying to save the array in the first function, I used chat gpt on how to store values in the array without recreating an array each recursive call. I learned I needed to have this function in a function to save the array to the overall fib function.
