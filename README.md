@@ -36,3 +36,5 @@ The use of append is not standard in JavaScript; use push instead. The logic nee
 ChatGPT also helped with syntax on how to store values in an array to still allow the values to be saved in an array. 
 Asked Ali Torabi for help on how to store an array within JavaScript without the code initializing a new array every recursive iteration.
 In general - while I was trying to save the array in the first function, I used chat gpt on how to store values in the array without recreating an array each recursive call. I learned I needed to have this function in a function to save the array to the overall fib function. While I thought this fixed the problem, I found my previous code was still pushing to many elements to the array, with some trouble shooting I finally found the cause of this.
+
+I certify that I have listed all sources used to complete this exercise, including the use of any Large Language Models. All of the work is my own, except where stated otherwise. I am aware that plagiarism carries severe penalties and that if plagiarism is suspected, charges may be filed against me without prior notice.
