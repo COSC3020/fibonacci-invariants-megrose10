@@ -1,7 +1,7 @@
 function fib(n) {
     const fibArray = [];
     function recurFib(x) {
-      console.log(`${x}`);
+      //console.log(`${x}`);
       //console.log(fibArray.length);
         if(x<=0) {
             fibArray.push(0)
