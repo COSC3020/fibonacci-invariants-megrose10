@@ -19,6 +19,7 @@ testing code that uses [jsverify](https://jsverify.github.io/) in
 
 What is a good invariant for your recursive implementation of `fib()`
 i.e. something that is always true at the beginning of the recursive call?
+----The previous two elements' fibonocci values.
 
 Hint: Think about what the "state of the world" is here and what you can say
 about it at the start of each recursive call. Your invariant must say something
@@ -27,6 +28,7 @@ about the current recursive call.
 Describe your reasoning and the conclusion you've come to. Your reasoning is the
 most important part. You do not need to prove that the invariant is correct. Add
 your answer to this markdown file.
+----When using this invariant, we can test any number. For example, if we want to test 4, we just look at the previous two elements in the array and add them. We assume this is correct before we add the two elements, which would be at index -1 and index, since the index of the array is base 0.
 
 Citations:
 Citations: 
@@ -35,6 +37,6 @@ Used chatgpt to tell me what the issues in my code were: " Your Fibonacci functi
 The use of append is not standard in JavaScript; use push instead. The logic needs to be restructured to correctly compute Fibonacci numbers. The recursion isn't necessary if you want to generate the Fibonacci sequence iteratively. " as well as how I am defining things. 
 ChatGPT also helped with syntax on how to store values in an array to still allow the values to be saved in an array. 
 Asked Ali Torabi for help on how to store an array within JavaScript without the code initializing a new array every recursive iteration.
-In general - while I was trying to save the array in the first function, I used chat gpt on how to store values in the array without recreating an array each recursive call. I learned I needed to have this function in a function to save the array to the overall fib function. While I thought this fixed the problem, I found my previous code was still pushing to many elements to the array, with some trouble shooting I finally found the cause of this.
+In general - while I was trying to save the array in the first function, I used chat gpt on how to store values in the array without recreating an array each recursive call. I learned I needed to have this function in a function to save the array to the overall fib function. While I thought this fixed the problem, I found my previous code was still pushing to many elements too the array and not using recursion correctly, with some trouble shooting(as shown in some of the print statements) I finally found the cause of this.
 
 I certify that I have listed all sources used to complete this exercise, including the use of any Large Language Models. All of the work is my own, except where stated otherwise. I am aware that plagiarism carries severe penalties and that if plagiarism is suspected, charges may be filed against me without prior notice.
