@@ -19,7 +19,7 @@ testing code that uses [jsverify](https://jsverify.github.io/) in
 
 What is a good invariant for your recursive implementation of `fib()`
 i.e. something that is always true at the beginning of the recursive call?
-----The previous two elements' fibonocci values.
+----In order for the fibonacci sequence to be correct up to the number we call, the prior two elements in the array must be correct. So the index of x-1 and x in the array must be correct in order to find the next values since those are both variables to the next elements sum.
 
 Hint: Think about what the "state of the world" is here and what you can say
 about it at the start of each recursive call. Your invariant must say something
